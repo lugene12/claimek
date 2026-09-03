@@ -364,9 +364,6 @@
     background:var(--panel);border:1px solid var(--line);
     padding:6px 12px;border-radius:99px;
   }
-  .srcline{font-size:13px;color:var(--dim);margin-top:22px}
-  .srclink{color:var(--teal);text-decoration:none;border-bottom:1px dotted var(--teal)}
-
   /* ── Final CTA ──────────────────────────────────── */
   .final{
     padding:104px 0;text-align:center;position:relative;overflow:hidden;
