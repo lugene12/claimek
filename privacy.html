@@ -105,7 +105,7 @@
     <h2>3. Other companies we send data to, and where they are</h2>
     <p>To check a claim we have to send the claim text to two outside services. These may handle it on computers outside the Philippines, mainly in the United States:</p>
     <ul>
-      <li><b>A third-party AI provider</b>, which picks out checkable claims from the caption text, and gives an automated assessment of claims that no fact-checking group has covered. Their model-training / data-sharing option is switched off on our account, so this text is never used to train their models.</li>
+      <li><b>OpenAI</b>, which picks out checkable claims from the caption text, and gives an automated assessment of claims that no fact-checking group has covered. Their model-training / data-sharing option is switched off on our account, so this text is never used to train their models.</li>
       <li><b>Google Fact Check Tools</b>, which looks up whether a fact-checking group has already rated the claim.</li>
     </ul>
     <p>Under Section 21 of the Data Privacy Act we stay responsible for your data even after we send it to these companies. We send only what is needed to check the claim. Your identity is never sent with it, because we do not hold one.</p>
@@ -115,7 +115,7 @@
 
     <h2>5. How long we keep things</h2>
     <ul>
-      <li><b>Caption text</b> is used at the moment of checking and not kept as part of your record. <span class="placeholder">[CONFIRM: server log retention period. See note to owner]</span></li>
+      <li><b>Caption text</b> is used at the moment of checking and not kept as part of your record. Operational server logs, which can briefly include request data, are capped automatically in size, and the oldest entries are deleted as new ones come in.</li>
       <li><b>Claims and their results</b> are kept so the same claim can be answered right away next time. These records are about claims, not about people.</li>
       <li><b>Usage counts</b> are kept as plain totals, to see how well the service is working.</li>
       <li><b>Check limits</b> are held in memory only and clear within 24 hours at most.</li>
@@ -126,7 +126,7 @@
     <p>You can also file a complaint with the NPC at privacy.gov.ph.</p>
 
     <h2>7. Children</h2>
-    <p>Claimek is not directed at children. <span class="placeholder">[CONFIRM: minimum age statement. See note to owner]</span></p>
+    <p>Claimek is not directed at children. It is not intended for use by anyone under 13, and we do not knowingly collect personal information from anyone under 13. Because Claimek has no accounts and does not ask for a name, email address, or date of birth, we have no way to verify a user's age. If we become aware that we have inadvertently collected data from a child under 13, we will delete it.</p>
 
     <h2>8. Security</h2>
     <p>Data moving between the extension and our server is encrypted using HTTPS, and data at rest on our servers is encrypted as well. Saved claims are stored under a scrambled version of the text rather than the text itself. Access to our live systems is limited. No system is perfectly safe. If there is ever a data breach we will tell the NPC and the people affected, as NPC Circular 16-03 requires.</p>
