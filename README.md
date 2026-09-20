@@ -24,8 +24,11 @@ claimek/
 │   ├── claimek-mark-transparent.svg  # Same mark, no background — for placing on other surfaces
 │   ├── claimek-lockup.svg            # Full wordmark lockup (used in READMEs, decks, etc.)
 │   ├── og-image.svg                  # Open Graph card source, 1200×630
-│   └── og-image.png                  # Rasterized OG card — what Facebook/Messenger/link
-│                                       previews actually load; social crawlers don't render SVG
+│   ├── og-image.png                  # Rasterized OG card — what Facebook/Messenger/link
+│   │                                   previews actually load; social crawlers don't render SVG
+│   ├── hero-demo.png                 # Real capture of the extension, hero image above 680px
+│   ├── demo-sourced.png              # Mockup: fact-checker-sourced flag card, 2560×1440
+│   └── demo-automated.png            # Mockup: automated-check flag card, 2560×1440
 ├── CNAME                # Custom domain pin for GitHub Pages (claimek.com)
 ├── robots.txt
 └── sitemap.xml
@@ -53,19 +56,24 @@ GitHub Pages for any unmatched path, so it needs no routing configuration.
 
 ## Before this goes live
 
-Legal name (Lugene G. Luistro), contact/DPO email (`lugene12@gmail.com`),
-jurisdiction city (Calamba City), and the "Last updated"/"Effective" dates are
-filled in. The following still need real answers before launch — search for
-`[PLACEHOLDER]`-style spans (dashed underline via the `.placeholder` class in
-`style.css`) to find them:
+Nothing is outstanding. Legal name (Lugene G. Luistro), contact/DPO email
+(`lugene12@gmail.com`), jurisdiction city (Calamba City), the "Last updated" and
+"Effective" dates, and the server-log-retention and minimum-age statements in
+`privacy.html` are all filled in. No `[PLACEHOLDER]`-style spans remain, though
+the `.placeholder` class stays in `style.css` for future drafts.
 
-- **Server log retention** and **minimum-age statement** — flagged inline in
-  `privacy.html §5` and `§7` as needing confirmation from whoever owns the
-  server-side logging config once the backend has a real deployment target
-  (nothing is deployed yet, so there's no retention policy to state honestly).
-- **Chrome Web Store links** — every "Add to Chrome" button and the footer link
-  currently point at the generic `chromewebstore.google.com` root rather than the
-  live listing URL.
+Every "Add to Chrome" button and footer link points at the published listing,
+`https://chromewebstore.google.com/detail/ipkdkdedconlpipcabenngkbnaniocbk`. That
+URL appears in `index.html`, `privacy.html`, `terms.html`, and `404.html`, so
+changing it means changing all four.
+
+## Hero demo
+
+`assets/hero-demo.png` is a real capture of the extension running, shown in the
+hero above 680px wide. Below that breakpoint it is hidden and the hand-built CSS
+mockup in `index.html` (`.mobile-demo`) is shown instead, because the screenshot
+is a 1280px-wide desktop browser window whose panel text is unreadable on a
+phone. Both show the same idea, so if the product's UI changes, update both.
 
 `index.html`'s "Under the hood" section deliberately stops at a high-level
 architecture description and tech-stack chips, with no link out to source code.

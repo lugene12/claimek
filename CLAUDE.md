@@ -30,6 +30,19 @@ elsewhere in the repo (e.g. `scripts/pre-commit`) with a setup note in `README.m
 telling people to symlink/copy it into `.git/hooks/`, or migrate to a tracked hook
 manager — neither has been done, since today this is a solo repo on one machine.
 
+## Hero demo and store links
+
+**The hero carries two demos, and both have to stay true.** `assets/hero-demo.png`
+is a real screenshot of the extension running, shown above 680px wide. Below that
+the CSS mockup in `index.html` (`.mobile-demo`) takes over, because the screenshot
+is a 1280px-wide desktop window whose panel text is unreadable on a phone. A change
+to the product's UI makes both stale, not just one.
+
+**The published listing URL is repeated in four files** — `index.html`,
+`privacy.html`, `terms.html`, and `404.html` — as
+`https://chromewebstore.google.com/detail/ipkdkdedconlpipcabenngkbnaniocbk`.
+There's no shared include, so changing it means changing all four.
+
 ## Conventions
 
 - **Update this CLAUDE.md in the same turn as any change to site behavior** — a

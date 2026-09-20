@@ -226,6 +226,22 @@
   .vmeta .vtitle{color:var(--mut);font-weight:500}
   .vmeta .vdot{color:var(--line-2)}
 
+  /* Real product screenshot for the hero. Phones keep the mockup above instead:
+     this is a 1280px-wide desktop window, so its panel text is unreadable at phone
+     width, while the mockup reflows (see the 680px block at the end of this file). */
+  .shot{
+    margin-top:52px;
+    border:1px solid var(--line);
+    border-radius:16px;overflow:hidden;line-height:0;
+    box-shadow:0 40px 90px rgba(0,0,0,.55);
+  }
+  .shot img{display:block;width:100%;height:auto}
+  .mobile-demo{display:none}
+  @media (max-width:680px){
+    .shot{display:none}
+    .mobile-demo{display:block}
+  }
+
   /* ── Icon cards ─────────────────────────────────── */
   .cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:46px}
   .card{
