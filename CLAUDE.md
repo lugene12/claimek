@@ -85,6 +85,16 @@ notice a change, and skip releases they would not.
 
 **The trigger is the extension's zip build, not the release going live.** Owner's standing instruction (2026-09-20): building a submission zip bumps `manifest.json`'s version *and* adds that version's entry here, in the same turn, before the zip is handed over. Waiting until approval means writing the entry from memory days later.
 
+**Every entry carries a date, on a `.meta` line directly under its heading, in a
+`<time datetime="YYYY-MM-DD">` element written as "Month D, YYYY"** (the same format
+as the legal pages' "Last updated"). A version waiting on review reads "Submitted
+for review <date>"; once the store shows it live, that line becomes "Released
+<date>", using the "Updated" date on the store listing, which is the publish date
+of whatever version is live. The date is the point of the page: an undated list
+of fixes proves nothing about whether anyone is still minding the product.
+0.1.0's September 18, 2026 was confirmed by the owner; 0.1.1's September 20, 2026
+comes from the live listing.
+
 Three rules for entries:
 - **Plain language, user's point of view.** What they will see differently, never
   prompt wording, selectors, or internals a competitor would find useful.
