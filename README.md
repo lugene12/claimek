@@ -17,6 +17,8 @@ claimek/
 ├── privacy.html        # Privacy Policy
 ├── terms.html          # Terms of Service
 ├── 404.html            # Custom not-found page (served automatically by GitHub Pages)
+├── start.html          # Quick start draft: gitignored and unlinked until its screenshots exist
+├── changelog.html      # Release notes at /changelog, linked from every footer
 ├── style.css            # Shared stylesheet for all pages
 ├── favicon.svg           # Browser-tab icon, referenced at site root
 ├── assets/
@@ -64,8 +66,8 @@ the `.placeholder` class stays in `style.css` for future drafts.
 
 Every "Add to Chrome" button and footer link points at the published listing,
 `https://chromewebstore.google.com/detail/ipkdkdedconlpipcabenngkbnaniocbk`. That
-URL appears in `index.html`, `privacy.html`, `terms.html`, and `404.html`, so
-changing it means changing all four.
+URL appears in `index.html`, `privacy.html`, `terms.html`, `start.html`,
+`changelog.html`, and `404.html`, so changing it means changing all six.
 
 ## Hero demo
 

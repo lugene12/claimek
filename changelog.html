@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#0B1220">
-<title>Claimek couldn't find that page</title>
-<meta name="description" content="That page does not exist.">
-<link rel="canonical" href="https://claimek.com/404">
-<meta property="og:title" content="Claimek couldn't find that page">
-<meta property="og:description" content="That page does not exist.">
-<meta property="og:url" content="https://claimek.com/404">
+<title>Claimek Changelog</title>
+<meta name="description" content="What changed in each release of Claimek, in plain language, and how to report a flag that looks wrong.">
+<link rel="canonical" href="https://claimek.com/changelog">
+<meta property="og:title" content="Claimek Changelog">
+<meta property="og:description" content="What changed in each release of Claimek, in plain language, and how to report a flag that looks wrong.">
+<meta property="og:url" content="https://claimek.com/changelog">
 <meta property="og:type" content="website">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/claimek-mark.svg">
@@ -56,14 +56,33 @@
 </div>
 
 <main>
-  <div class="wrap hero">
-    <div class="eyebrow center"><span class="n">404</span> · Page not found</div>
-    <h1>That page isn't here.<span class="soft">The check came back empty.</span></h1>
-    <p class="hero-sub">The link may be old, or the address may have a typo.</p>
-    <div class="cta-row">
-      <a class="btn" href="/">Back to Claimek <span class="arw">→</span></a>
-      <a class="btn btn--ghost" href="/privacy">Privacy Policy</a>
+  <div class="wrap legal">
+    <a class="back" href="/">← Back to Claimek</a>
+    <h1>Changelog</h1>
+    <div class="meta">What changed in each release, in plain language</div>
+
+    <div class="callout">
+      <b>Claimek keeps changing.</b> Chrome updates the extension for you, so you do not need to do anything. This page says what changed and when, including the times we got something wrong and fixed it.
     </div>
+
+    <h2>Version 0.1.1</h2>
+    <p><b>Submitted for review.</b> Chrome reviews every update, so this reaches you a few days after it is approved.</p>
+    <ul>
+      <li><b>Videos without captions now say so.</b> Claimek used to ask you to turn captions on even when the video had none to turn on, which made it look broken on videos it can never check.</li>
+      <li><b>Clearer message when checking is paused.</b> If checks stop for a while, the panel now says so plainly instead of leaving you guessing whether the extension still works.</li>
+    </ul>
+
+    <h2>Version 0.1.0</h2>
+    <div class="meta">September 2026, first release</div>
+    <ul>
+      <li>Reads the captions of the YouTube video you are watching and flags claims that are false or misleading, while the video plays.</li>
+      <li>Checks the video title as soon as the page opens, and marks flags that came from the title.</li>
+      <li>Links the fact check when a fact-checking group has already rated the claim, and labels an automated assessment as automated.</li>
+      <li>Flags individual claims, never whole videos or the people in them.</li>
+    </ul>
+
+    <h2>Think a flag is wrong?</h2>
+    <p>Please tell us. Send the video link and what the flag said to <a href="mailto:lugene12@gmail.com">lugene12@gmail.com</a>. We read every report, correct or remove flags that turn out to be wrong, and clear the saved result so the same mistake is not repeated for other viewers.</p>
   </div>
 </main>
 

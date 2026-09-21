@@ -236,6 +236,24 @@
     box-shadow:0 40px 90px rgba(0,0,0,.55);
   }
   .shot img{display:block;width:100%;height:auto}
+  .meter-note a{color:var(--teal);text-decoration:none;border-bottom:1px dotted var(--teal)}
+
+  /* ── Quick start steps (start.html) ─────────────── */
+  .gstep{margin-top:44px}
+  .gnum{font-family:var(--cap);font-size:12px;font-weight:600;letter-spacing:.12em;color:var(--teal)}
+  .gstep h2{margin-top:6px}
+  .gcheck{color:var(--ink)}
+  .gcheck b{color:var(--teal);font-weight:600}
+  .gshot{
+    margin-top:18px;border:1px solid var(--line);border-radius:14px;
+    overflow:hidden;line-height:0;background:var(--panel);
+  }
+  .gshot img{display:block;width:100%;height:auto}
+  .gnote{
+    margin-top:16px;padding-left:14px;border-left:3px solid var(--line-2);
+    color:var(--dim);font-size:13.5px;line-height:1.7;
+  }
+
   .mobile-demo{display:none}
   @media (max-width:680px){
     .shot{display:none}

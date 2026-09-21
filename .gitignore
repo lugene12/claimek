@@ -1,0 +1,5 @@
+# Drafts kept local until they're ready to publish. The quick start page is
+# finished apart from its three screenshots. To publish it, delete these lines
+# and follow the restore steps in CLAUDE.md under "The quick start page".
+start.html
+assets/step-*.png

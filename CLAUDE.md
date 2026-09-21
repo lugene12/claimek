@@ -30,6 +30,36 @@ elsewhere in the repo (e.g. `scripts/pre-commit`) with a setup note in `README.m
 telling people to symlink/copy it into `.git/hooks/`, or migrate to a tracked hook
 manager — neither has been done, since today this is a solo repo on one machine.
 
+## The quick start page
+
+**Status: draft, not published (2026-09-21).** The page is written but its three
+screenshots aren't captured yet, so it is held back rather than shipped with
+placeholder images. `.gitignore` keeps `start.html` and `assets/step-*.png` out
+of every commit, and all links to it were removed. To publish: capture the
+screenshots over the placeholders, delete those two `.gitignore` lines, re-add
+`<a href="/start">Quick start</a>` as the first link in the footer of
+`index.html`, `privacy.html`, `terms.html`, `404.html`, and `changelog.html`,
+restore the one-sentence pointer to it at the end of the "How it works" section,
+and put `/start` back in `sitemap.xml`. The CSS (`.gstep` and friends, plus
+`.meter-note a`) was left in place, so nothing there needs restoring.
+
+`start.html` at `/start` is the onboarding guide. **It is deliberately not in the
+top nav.** A visible "Tutorial" link tells a visitor the product needs learning,
+which contradicts the "Nothing to configure" promise in the hero and costs
+installs. It is linked from every page footer and from the end of the "How it
+works" section, so it is found after interest exists, not before.
+
+Its job is to defuse the four moments that read as "broken" and cause uninstalls:
+a video with no captions, a skipped category, a tab that was open before install,
+and a paused check. Each is framed as expected behaviour with the panel naming it,
+never as the user's mistake. The page also states up front that a quiet panel is
+the good outcome, which is the same empty-state reasoning the extension's own
+panel copy follows. Keep that framing if you edit it.
+
+`assets/step-1-install.png`, `step-2-panel.png`, and `step-3-captions.png` are
+placeholders rendered from inline SVG, sized 1280x420 and 1280x620. Real captures
+overwrite them at the same filenames, so no markup changes.
+
 ## Hero demo and store links
 
 **The hero carries two demos, and both have to stay true.** `assets/hero-demo.png`
@@ -42,6 +72,30 @@ to the product's UI makes both stale, not just one.
 `privacy.html`, `terms.html`, and `404.html` — as
 `https://chromewebstore.google.com/detail/ipkdkdedconlpipcabenngkbnaniocbk`.
 There's no shared include, so changing it means changing all four.
+
+## Release notes
+
+`changelog.html` (`/changelog`) is the public, user-facing record of what each
+extension release changed, linked from every footer alongside a `Contact` mailto.
+It exists because a fact-checking tool is judged on whether anyone is still
+minding it, and a dated list of fixes is the cheapest proof there is. That cuts
+both ways: **a changelog whose newest entry is months old reads as abandoned,
+which is worse than not having the page** — so add an entry whenever users would
+notice a change, and skip releases they would not.
+
+**The trigger is the extension's zip build, not the release going live.** Owner's standing instruction (2026-09-20): building a submission zip bumps `manifest.json`'s version *and* adds that version's entry here, in the same turn, before the zip is handed over. Waiting until approval means writing the entry from memory days later.
+
+Three rules for entries:
+- **Plain language, user's point of view.** What they will see differently, never
+  prompt wording, selectors, or internals a competitor would find useful.
+- **Own the mistakes.** "We flagged some correct figures as misleading. Fixed."
+  A checker that admits its own errors gains more credibility than it loses.
+- **Never announce an unapproved build as shipped.** Chrome reviews every update,
+  so a new version sits under a "Submitted for review" line until it is live.
+
+Server-side changes (backend prompts, scoring) carry no extension version, so give
+them their own dated entry when they deploy, rather than folding them into a
+version the user's Chrome has not received.
 
 ## Conventions
 
